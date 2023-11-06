@@ -1,0 +1,18 @@
+docker-compose up -d [nombre]
+docker ps
+docker inspect [idcontenedor]
+---copy ip address to connect database in pgadmin (object -> register -> server)
+
+docker-compose down
+
+npm run dev
+
+
+---DEPLOY HEROKU---
+
+git init
+heroku create (opcional)
+heroku git:remote -a [nombre-proyecto] (opcional)
+heroku addons:create heroku-postgresql:hobby-dev
+
+heroku pg:info (ver info del plan)
